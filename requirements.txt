@@ -3,6 +3,7 @@ PyMuPDF
 python_dotenv
 google-generativeai==0.3.2
 rank_bm25
+tf-keras
 sentence_transformers
 biopython
 faiss-cpu==1.7.4
