@@ -46,13 +46,11 @@ Create a file called .env in the project root:
    ```
 
 ### 4. Run the app
-Create a file called .env in the project root:
    ```bash
    python app.py
    ```
 
 ### 5. Open in browser
-Create a file called .env in the project root:
    ```bash
    http://localhost:5000
    ```
