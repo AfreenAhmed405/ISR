@@ -13,8 +13,11 @@ from rank_bm25 import BM25Okapi
 
 def process_pdf(filepath, report_type, notes):
     text = extract_text_from_pdf(filepath)
-    values = extract_with_LLM(text)
-    tokens = generate_descriptions(values)
+    tokens = extract_with_LLM(text, report_type)
+    
+    if report_type != 'Discharge Summary':
+        tokens = generate_descriptions(tokens)
+    
     print(tokens)
 
     return {
@@ -41,25 +44,41 @@ def extract_json_from_text(text):
         print("JSON parsing failed:", e)
         return []
     
-def extract_with_LLM(text):
+def extract_with_LLM(text, report_type):
     clean_text = "\n".join([line for line in text.splitlines() if line.strip()])
 
-    prompt = f"""
+    if report_type == 'Discharge Summary':
+      prompt = f"""
       You are a medical report parser.
 
-      The following text is a blood test report extracted from a PDF. The format is broken across multiple lines — each test's name, value, and unit may appear on separate lines.
+      The following text is a discharge summary extracted from a PDF.
 
       ---
 
       Your job:
-      1. Extract all **test results** that include:
-        - `"name"`: the test name (e.g., "Hemoglobin")
-        - `"value"`: the actual test value with units, if available (e.g., "11.9 g/dL") and whether it is within Optimal, Low or High range (Do not forget to add this).
+      1. Summarize what the page describes in plain English under a single key and extract all results in this **JSON format**:
+      {{
+        "name": "This page provides general information about laboratory test procedures and patient instructions."
+      }},
+      {{
+        "name": "Your foot is broken"
+      }}
 
-      2. Ignore any metadata (e.g., "Patient Name", "Age", "Note", etc.)
+      ---
 
-      3. Return the output as a valid **JSON list**, like this:
+      Text:
+      {text}
+      """
+    else:
+      prompt = f"""
+      You are a medical report parser.
 
+      The following text is a medical test report extracted from a PDF. The format is broken across multiple lines — each test's name, value, and unit may appear on separate lines.
+
+      ---
+
+      Your job:
+      1. **If test values are present**, extract all test results in this **JSON format**:
       [
         {{
           "name": "Hemoglobin",
@@ -71,11 +90,13 @@ def extract_with_LLM(text):
         }}
       ]
 
+      Make sure each "value" includes the numeric result, unit, and whether it is **Low**, **Normal**, or **High** based on standard reference ranges.
+
       ---
 
       Text:
-      {clean_text}
-    """
+      {text}
+      """
 
     model = genai.GenerativeModel("models/gemini-1.5-flash")
     load_dotenv(dotenv_path=".env")

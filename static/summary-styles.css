@@ -136,3 +136,41 @@ body {
     max-width: 600px;
     margin: auto;
   }
+
+  footer a {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+    margin-top: 0.5rem;
+  }
+  
+  footer a:hover {
+    color: #ff0000; /* Red on hover for YouTube feel */
+  }
+  
+  footer .youtube-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 0.5em;
+    vertical-align: middle;
+  }
+
+  .youtube-icon {
+    width: px;
+    height: 32px;
+    margin-right: 0.5em;
+    vertical-align: middle;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .row > * {
+    flex: 1;
+  }

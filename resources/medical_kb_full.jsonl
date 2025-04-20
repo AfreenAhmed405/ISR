@@ -13,8 +13,8 @@
 {"chunk": "Eosinophils help fight allergies and parasitic infections. Reference range: 1 - 6%."}
 {"chunk": "Basophils are the least common type of WBC but are involved in allergic reactions. Reference range: 4,000 - 11,000 cells/cumm."}
 {"chunk": "Total Cholesterol measures all cholesterol in your blood. High levels increase heart disease risk. Reference range: < 200 mg/dL."}
-{"chunk": "HDL (High-Density Lipoprotein) is the 'good' cholesterol. Higher levels are better for heart health. Reference range: > 40 mg/dL."}
-{"chunk": "LDL (Low-Density Lipoprotein) is the 'bad' cholesterol. High levels increase heart disease risk. Reference range: < 100 mg/dL."}
+{"chunk": "HDL (High-Density Lipoprotein) is the 'good' cholesterol. Higher levels are better for heart health."}
+{"chunk": "LDL (Low-Density Lipoprotein) is the 'bad' cholesterol. High levels increase heart disease risk."}
 {"chunk": "VLDL (Very Low-Density Lipoprotein) carries triglycerides. High levels can contribute to heart disease. Reference range: < 100 mg/dL."}
 {"chunk": "Triglycerides are a type of fat in the blood. Elevated levels are a risk factor for heart disease. Reference range: < 150 mg/dL."}
 {"chunk": "CHOL/HDL Ratio is used to estimate heart disease risk. A lower ratio is generally better."}

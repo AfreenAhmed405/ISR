@@ -1,42 +1,6 @@
 {
-  "filename": "sample_report-3.pdf",
-  "report_type": "blood",
+  "filename": "discharge_summary_one_page_smallfont.pdf",
+  "report_type": "discharge",
   "notes": "",
-  "tokens": [
-    {
-      "name": "Cholesterol",
-      "value": "189.0 mg/dL - Borderline High",
-      "description": "Total Cholesterol measures all cholesterol in your blood. High levels increase heart disease risk. Reference range: < 200 mg/dL."
-    },
-    {
-      "name": "Triglyceride",
-      "value": "168.0 mg/dL - High",
-      "description": "Triglycerides are a type of fat in the blood. Elevated levels are a risk factor for heart disease. Reference range: < 150 mg/dL."
-    },
-    {
-      "name": "HDL Cholesterol",
-      "value": "60.0 mg/dL - High",
-      "description": "HDL (High-Density Lipoprotein) is the 'good' cholesterol. Higher levels are better for heart health. Reference range: > 40 mg/dL."
-    },
-    {
-      "name": "Direct LDL",
-      "value": "100.39 mg/dL - Optimal",
-      "description": "LDL (Low-Density Lipoprotein) is the 'bad' cholesterol. High levels increase heart disease risk. Reference range: < 100 mg/dL."
-    },
-    {
-      "name": "VLDL",
-      "value": "33.60 mg/dL - Optimal",
-      "description": "VLDL (Very Low-Density Lipoprotein) carries triglycerides. High levels can contribute to heart disease. Reference range: < 100 mg/dL."
-    },
-    {
-      "name": "CHOL/HDL Ratio",
-      "value": "3.1 - Optimal",
-      "description": "LDL/HDL Ratio compares bad to good cholesterol. Higher values indicate more risk. Reference range: > 40 mg/dL."
-    },
-    {
-      "name": "LDL/HDL Ratio",
-      "value": "1.7 - Optimal",
-      "description": "CHOL/HDL Ratio is used to estimate heart disease risk. A lower ratio is generally better. Reference range: > 40 mg/dL."
-    }
-  ]
+  "tokens": []
 }
