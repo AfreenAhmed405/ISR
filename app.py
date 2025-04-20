@@ -4,8 +4,6 @@ import json
 from tokenizer import process_pdf
 
 app = Flask(__name__)
-UPLOAD_FOLDER = 'uploads'
-os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 @app.route('/')
 def index():
@@ -41,10 +39,10 @@ def upload_file():
 @app.route('/summary')
 def summary():
     try:
-        with open("extracted.json", "r", encoding="utf-8") as f:
+        with open("extracted_testing.json", "r", encoding="utf-8") as f:
             result = json.load(f)
     except FileNotFoundError:
-        result = {"message": "No data found."}
+        result = {"tokens": [], "message": "No summary available."}
 
     return render_template("summary.html", summary=result)
 

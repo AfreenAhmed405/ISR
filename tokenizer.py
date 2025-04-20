@@ -11,7 +11,7 @@ def process_pdf(filepath, report_type, notes):
             "filename": filepath,
             "report_type": report_type,
             "notes": notes,
-            "tokens": tokens[:100],
+            "tokens": tokens,
             "message": "Processed successfully"
         }
 

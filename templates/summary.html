@@ -23,25 +23,15 @@
     <div class="summary-box">
       <h2>Blood Test Summary</h2>
       <ul>
-        <li><strong>Vitamin D:</strong> 18 ng/mL — Low  
-          <div class="description">Vitamin D helps absorb calcium and keep bones strong. Low levels can cause tiredness, bone pain, or even mood issues.</div>
-        </li>
-        <li><strong>Hemoglobin:</strong> 11.9 g/dL — Mild anemia  
-          <div class="description">Hemoglobin carries oxygen in your blood. Low levels may lead to fatigue, weakness, or shortness of breath.</div>
-        </li>
-        <li><strong>ALT:</strong> 11 U/L — Normal  
-          <div class="description">ALT is a liver enzyme. Your result is within the healthy range, indicating normal liver function.</div>
-        </li>
-        <li><strong>Creatinine:</strong> 0.69 mg/dL — Normal  
-          <div class="description">Creatinine is a waste product removed by your kidneys. Normal levels suggest healthy kidney function.</div>
-        </li>
-        <li><strong>LDL Cholesterol:</strong> 70 mg/dL — Optimal  
-          <div class="description">LDL is the "bad" cholesterol. Lower levels like yours reduce the risk of heart disease.</div>
-        </li>
-        <li><strong>TSH:</strong> 1.19 UIU/mL — Normal  
-          <div class="description">TSH controls your thyroid. Your value is normal, so no thyroid problems are suspected.</div>
-        </li>
-      </ul>
+        {% for test in summary.tokens %}
+          <li>
+            <strong>{{ test.name }}:</strong> {{ test.value }}
+            <div class="description">{{ test.description }}</div>
+          </li>
+        {% endfor %}
+      </ul>  
+
+      <p><strong>You also said: </strong> {{ summary.notes or "No additional notes provided." }}</p>
 
       <label for="question">Ask a question about your report:</label>
       <div class="input-row">
