@@ -2,6 +2,9 @@
 
 Report Genie is a Flask-based web application that allows users to upload medical reports (PDF), automatically extract test values (e.g., Hemoglobin, Cholesterol), and generate patient-friendly descriptions using Retrieval-Augmented Generation (RAG) powered by Gemini and PubMed.
 
+![Landing Page](resources/s1.png)
+![Report Summarizer](resources/s2.png)
+
 ---
 
 ## 🚀 Features
