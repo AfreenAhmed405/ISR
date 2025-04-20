@@ -74,7 +74,7 @@ def extract_with_gemini(text):
     """
 
     model = genai.GenerativeModel("models/gemini-1.5-flash")
-    load_dotenv(dotenv_path="keys.env")
+    load_dotenv(dotenv_path=".env")
     GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
     genai.configure(api_key=GOOGLE_API_KEY)
 

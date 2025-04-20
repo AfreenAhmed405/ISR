@@ -32,4 +32,27 @@ Report Genie is a Flask-based web application that allows users to upload medica
    ```bash
    git clone https://github.com/yourusername/report-genie
    cd report-genie
+   ```
 
+### 2. Install dependencies
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### 3. Add your Gemini API key
+Create a file called .env in the project root:
+   ```bash
+   GOOGLE_API_KEY=your_gemini_api_key_here
+   ```
+
+### 4. Run the app
+Create a file called .env in the project root:
+   ```bash
+   python app.py
+   ```
+
+### 5. Open in browser
+Create a file called .env in the project root:
+   ```bash
+   http://localhost:5000
+   ```
