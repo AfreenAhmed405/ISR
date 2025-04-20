@@ -10,7 +10,7 @@ import google.generativeai as genai
 def process_pdf(filepath, report_type, notes):
     text = extract_text_from_pdf(filepath)
     tokens = extract_with_gemini(text)
-    generate_descriptions(tokens)
+    # generate_descriptions(tokens)
 
     return {
         "filename": Path(filepath).name,

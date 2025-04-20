@@ -1,7 +1,7 @@
 {
   "filename": "sample_report-3.pdf",
   "report_type": "blood",
-  "notes": "I am dying.",
+  "notes": "I am feeling sick.",
   "tokens": [
     {
       "name": "Cholesterol",
