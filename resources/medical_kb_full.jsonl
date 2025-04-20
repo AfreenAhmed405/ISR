@@ -1,63 +1,63 @@
-{"chunk": "Hemoglobin: Hemoglobin is a protein in red blood cells that carries oxygen. Low levels may indicate anemia."}
-{"chunk": "Hematocrit: Hematocrit is the percentage of blood volume occupied by red blood cells. Low levels can indicate anemia."}
-{"chunk": "RBC Count: RBC (Red Blood Cell) count measures how many red blood cells you have. It helps assess oxygen transport."}
-{"chunk": "WBC Count: WBC (White Blood Cell) count measures the number of white blood cells in your blood. It helps fight infection."}
-{"chunk": "Platelet Count: Platelets are cells that help your blood clot. Low counts may cause excessive bleeding or bruising."}
-{"chunk": "MCV: MCV (Mean Corpuscular Volume) indicates the average size of your red blood cells. It helps diagnose anemia types."}
-{"chunk": "MCH: MCH (Mean Corpuscular Hemoglobin) is the average amount of hemoglobin per red blood cell."}
-{"chunk": "MCHC: MCHC (Mean Corpuscular Hemoglobin Concentration) measures the concentration of hemoglobin in red blood cells."}
-{"chunk": "RDW: RDW (Red Cell Distribution Width) measures variation in red blood cell size. High RDW may indicate anemia."}
-{"chunk": "Neutrophils: Neutrophils are a type of white blood cell that fight bacterial infections. High levels may indicate infection."}
-{"chunk": "Lymphocytes: Lymphocytes are white blood cells that play a key role in your immune system. Low levels can indicate immune issues."}
-{"chunk": "Monocytes: Monocytes are white blood cells that help break down bacteria. Elevated levels can suggest inflammation."}
-{"chunk": "Eosinophils: Eosinophils help fight allergies and parasitic infections."}
-{"chunk": "Basophils: Basophils are the least common type of WBC but are involved in allergic reactions."}
-{"chunk": "Total Cholesterol: Total Cholesterol measures all cholesterol in your blood. High levels increase heart disease risk."}
-{"chunk": "HDL: HDL (High-Density Lipoprotein) is the 'good' cholesterol. Higher levels are better for heart health."}
-{"chunk": "LDL: LDL (Low-Density Lipoprotein) is the 'bad' cholesterol. High levels increase heart disease risk."}
-{"chunk": "VLDL: VLDL (Very Low-Density Lipoprotein) carries triglycerides. High levels can contribute to heart disease."}
-{"chunk": "Triglycerides: Triglycerides are a type of fat in the blood. Elevated levels are a risk factor for heart disease."}
-{"chunk": "CHOL/HDL Ratio: CHOL/HDL Ratio is used to estimate heart disease risk. A lower ratio is generally better."}
-{"chunk": "LDL/HDL Ratio: LDL/HDL Ratio compares bad to good cholesterol. Higher values indicate more risk."}
-{"chunk": "Sodium: Sodium helps regulate fluids and nerve function. Imbalances can cause confusion or seizures."}
-{"chunk": "Potassium: Potassium is critical for heart and muscle function. Too high or low can be dangerous."}
-{"chunk": "Chloride: Chloride helps maintain fluid balance and blood pressure."}
-{"chunk": "Bicarbonate: Bicarbonate helps regulate blood pH balance."}
-{"chunk": "BUN: BUN (Blood Urea Nitrogen) measures kidney function. Elevated levels may indicate kidney problems."}
-{"chunk": "Creatinine: Creatinine is a waste product measured to assess kidney function."}
-{"chunk": "eGFR: eGFR estimates how well your kidneys are filtering blood. Lower values indicate worse function."}
-{"chunk": "Glucose: Glucose measures blood sugar. It is used to screen for and manage diabetes."}
-{"chunk": "HbA1c: HbA1c reflects average blood sugar over the past 3 months. It is used to diagnose and monitor diabetes."}
-{"chunk": "ALT: ALT (Alanine Aminotransferase) is a liver enzyme. High levels can indicate liver damage."}
-{"chunk": "AST: AST (Aspartate Aminotransferase) is a liver enzyme. It's often tested with ALT."}
-{"chunk": "ALP: ALP (Alkaline Phosphatase) is an enzyme related to bile ducts. High levels may suggest liver or bone issues."}
-{"chunk": "Bilirubin: Bilirubin is a pigment processed by the liver. High levels may cause jaundice."}
-{"chunk": "Albumin: Albumin is a protein made by the liver. Low levels can indicate liver or kidney problems."}
-{"chunk": "Total Protein: Total Protein measures all proteins in blood. Abnormal levels can reflect liver or nutritional issues."}
-{"chunk": "CRP: CRP (C-Reactive Protein) is a marker of inflammation. High levels can indicate infection or chronic disease."}
-{"chunk": "ESR: ESR (Erythrocyte Sedimentation Rate) is a nonspecific marker of inflammation."}
-{"chunk": "Ferritin: Ferritin reflects stored iron in the body. Low levels may indicate iron deficiency."}
-{"chunk": "Vitamin D: Vitamin D helps with calcium absorption and bone health. Low levels can lead to bone problems."}
-{"chunk": "Vitamin B12: Vitamin B12 is vital for nerves and blood cell production. Deficiency may cause fatigue or neuropathy."}
-{"chunk": "Folate: Folate is essential for DNA synthesis and red blood cell production."}
-{"chunk": "Calcium: Calcium supports bones, teeth, muscles, and nerves."}
-{"chunk": "Phosphorus: Phosphorus helps build bones and is involved in energy metabolism."}
-{"chunk": "Magnesium: Magnesium is involved in muscle, nerve, and enzyme function."}
-{"chunk": "Iron: Iron is needed for red blood cell production. Low levels lead to anemia."}
-{"chunk": "TSH: TSH (Thyroid Stimulating Hormone) controls thyroid hormone production. High or low levels indicate thyroid problems."}
-{"chunk": "T3: T3 (Triiodothyronine) is a thyroid hormone affecting metabolism."}
-{"chunk": "T4: T4 (Thyroxine) is a key hormone regulating metabolism and energy."}
-{"chunk": "Testosterone: Testosterone is a hormone important for sexual function and muscle mass."}
-{"chunk": "FSH: FSH (Follicle Stimulating Hormone) regulates reproductive processes."}
-{"chunk": "LH: LH (Luteinizing Hormone) helps regulate ovulation and testosterone."}
-{"chunk": "Cortisol: Cortisol is a stress hormone that affects metabolism and immune response."}
-{"chunk": "Insulin: Insulin controls blood sugar levels. Abnormal levels are linked to diabetes."}
-{"chunk": "D-Dimer: D-Dimer is a protein fragment from blood clots. High levels suggest clotting problems."}
-{"chunk": "Procalcitonin: Procalcitonin is a marker of bacterial infection and sepsis."}
-{"chunk": "Troponin: Troponin is released when the heart muscle is damaged. High levels suggest a heart attack."}
-{"chunk": "BNP: BNP (Brain Natriuretic Peptide) is elevated in heart failure."}
-{"chunk": "NT-proBNP: NT-proBNP helps diagnose and monitor heart failure."}
-{"chunk": "ANA: ANA (Antinuclear Antibody) is used to detect autoimmune diseases like lupus."}
-{"chunk": "HIV: HIV tests detect the human immunodeficiency virus."}
-{"chunk": "Hepatitis B: Hepatitis B tests detect viral infection affecting the liver."}
-{"chunk": "Hepatitis C: Hepatitis C tests check for chronic liver infection."}
+{"chunk": "Hemoglobin is a protein in red blood cells that carries oxygen. Low levels may indicate anemia. Reference range: 12 - 15 g/dL."}
+{"chunk": "Hematocrit is the percentage of blood volume occupied by red blood cells. Low levels can indicate anemia. Reference range: 36 - 46%."}
+{"chunk": "RBC (Red Blood Cell) count measures how many red blood cells you have. It helps assess oxygen transport. Reference range: 3.9 - 5.2 million/cumm."}
+{"chunk": "WBC (White Blood Cell) count measures the number of white blood cells in your blood. It helps fight infection. Reference range: 4,000 - 11,000 cells/cumm."}
+{"chunk": "Platelets are cells that help your blood clot. Low counts may cause excessive bleeding or bruising. Reference range: 150,000 - 400,000 /\u03bcL."}
+{"chunk": "MCV (Mean Corpuscular Volume) indicates the average size of your red blood cells. It helps diagnose anemia types. Reference range: 80 - 100 fL."}
+{"chunk": "MCH (Mean Corpuscular Hemoglobin) is the average amount of hemoglobin per red blood cell. Reference range: 12 - 15 g/dL."}
+{"chunk": "MCHC (Mean Corpuscular Hemoglobin Concentration) measures the concentration of hemoglobin in red blood cells. Reference range: 12 - 15 g/dL."}
+{"chunk": "RDW (Red Cell Distribution Width) measures variation in red blood cell size. High RDW may indicate anemia. Reference range: 11.5 - 14.5%."}
+{"chunk": "Neutrophils are a type of white blood cell that fight bacterial infections. High levels may indicate infection. Reference range: 40 - 80%."}
+{"chunk": "Lymphocytes are white blood cells that play a key role in your immune system. Low levels can indicate immune issues. Reference range: 20 - 40%."}
+{"chunk": "Monocytes are white blood cells that help break down bacteria. Elevated levels can suggest inflammation. Reference range: 2 - 10%."}
+{"chunk": "Eosinophils help fight allergies and parasitic infections. Reference range: 1 - 6%."}
+{"chunk": "Basophils are the least common type of WBC but are involved in allergic reactions. Reference range: 4,000 - 11,000 cells/cumm."}
+{"chunk": "Total Cholesterol measures all cholesterol in your blood. High levels increase heart disease risk. Reference range: < 200 mg/dL."}
+{"chunk": "HDL (High-Density Lipoprotein) is the 'good' cholesterol. Higher levels are better for heart health. Reference range: > 40 mg/dL."}
+{"chunk": "LDL (Low-Density Lipoprotein) is the 'bad' cholesterol. High levels increase heart disease risk. Reference range: < 100 mg/dL."}
+{"chunk": "VLDL (Very Low-Density Lipoprotein) carries triglycerides. High levels can contribute to heart disease. Reference range: < 100 mg/dL."}
+{"chunk": "Triglycerides are a type of fat in the blood. Elevated levels are a risk factor for heart disease. Reference range: < 150 mg/dL."}
+{"chunk": "CHOL/HDL Ratio is used to estimate heart disease risk. A lower ratio is generally better. Reference range: > 40 mg/dL."}
+{"chunk": "LDL/HDL Ratio compares bad to good cholesterol. Higher values indicate more risk. Reference range: > 40 mg/dL."}
+{"chunk": "Sodium helps regulate fluids and nerve function. Imbalances can cause confusion or seizures. Reference range: 135 - 145 mEq/L."}
+{"chunk": "Potassium is critical for heart and muscle function. Too high or low can be dangerous. Reference range: 3.5 - 5.0 mEq/L."}
+{"chunk": "Chloride helps maintain fluid balance and blood pressure. Reference range: 98 - 107 mEq/L."}
+{"chunk": "Bicarbonate helps regulate blood pH balance. Reference range: 22 - 29 mEq/L."}
+{"chunk": "BUN (Blood Urea Nitrogen) measures kidney function. Elevated levels may indicate kidney problems. Reference range: 7 - 20 mg/dL."}
+{"chunk": "Creatinine is a waste product measured to assess kidney function. Reference range: 0.6 - 1.2 mg/dL."}
+{"chunk": "eGFR estimates how well your kidneys are filtering blood. Lower values indicate worse function. Reference range: > 60 mL/min/1.73m\u00b2."}
+{"chunk": "Glucose measures blood sugar. It is used to screen for and manage diabetes. Reference range: 70 - 99 mg/dL (fasting)."}
+{"chunk": "HbA1c reflects average blood sugar over the past 3 months. It is used to diagnose and monitor diabetes. Reference range: < 5.7%."}
+{"chunk": "ALT (Alanine Aminotransferase) is a liver enzyme. High levels can indicate liver damage. Reference range: 7 - 56 U/L."}
+{"chunk": "AST (Aspartate Aminotransferase) is a liver enzyme. It's often tested with ALT. Reference range: 7 - 56 U/L."}
+{"chunk": "ALP (Alkaline Phosphatase) is an enzyme related to bile ducts. High levels may suggest liver or bone issues. Reference range: 44 - 147 IU/L."}
+{"chunk": "Bilirubin is a pigment processed by the liver. High levels may cause jaundice. Reference range: 0.1 - 1.2 mg/dL."}
+{"chunk": "Albumin is a protein made by the liver. Low levels can indicate liver or kidney problems. Reference range: 3.5 - 5.5 g/dL."}
+{"chunk": "Total Protein measures all proteins in blood. Abnormal levels can reflect liver or nutritional issues."}
+{"chunk": "CRP (C-Reactive Protein) is a marker of inflammation. High levels can indicate infection or chronic disease. Reference range: < 3 mg/L."}
+{"chunk": "ESR (Erythrocyte Sedimentation Rate) is a nonspecific marker of inflammation. Reference range: 0 - 20 mm/hr."}
+{"chunk": "Ferritin reflects stored iron in the body. Low levels may indicate iron deficiency. Reference range: 12 - 300 ng/mL."}
+{"chunk": "Vitamin D helps with calcium absorption and bone health. Low levels can lead to bone problems. Reference range: 7 - 56 U/L."}
+{"chunk": "Vitamin B12 is vital for nerves and blood cell production. Deficiency may cause fatigue or neuropathy. Reference range: 190 - 950 pg/mL."}
+{"chunk": "Folate is essential for DNA synthesis and red blood cell production. Reference range: 2.7 - 17.0 ng/mL."}
+{"chunk": "Calcium supports bones, teeth, muscles, and nerves. Reference range: 8.5 - 10.2 mg/dL."}
+{"chunk": "Phosphorus helps build bones and is involved in energy metabolism. Reference range: 2.5 - 4.5 mg/dL."}
+{"chunk": "Magnesium is involved in muscle, nerve, and enzyme function. Reference range: 1.7 - 2.2 mg/dL."}
+{"chunk": "Iron is needed for red blood cell production. Low levels lead to anemia. Reference range: 60 - 170 mcg/dL."}
+{"chunk": "TSH (Thyroid Stimulating Hormone) controls thyroid hormone production. High or low levels indicate thyroid problems. Reference range: 0.4 - 4.0 \u03bcIU/mL."}
+{"chunk": "T3 (Triiodothyronine) is a thyroid hormone affecting metabolism. Reference range: 80 - 200 ng/dL."}
+{"chunk": "T4 (Thyroxine) is a key hormone regulating metabolism and energy. Reference range: 5.0 - 12.0 \u03bcg/dL."}
+{"chunk": "Testosterone is a hormone important for sexual function and muscle mass. Reference range: 300 - 1000 ng/dL."}
+{"chunk": "FSH (Follicle Stimulating Hormone) regulates reproductive processes. Reference range: 3 - 10 mIU/mL."}
+{"chunk": "LH (Luteinizing Hormone) helps regulate ovulation and testosterone. Reference range: 300 - 1000 ng/dL."}
+{"chunk": "Cortisol is a stress hormone that affects metabolism and immune response. Reference range: 6 - 23 mcg/dL."}
+{"chunk": "Insulin controls blood sugar levels. Abnormal levels are linked to diabetes. Reference range: 2 - 20 \u03bcIU/mL."}
+{"chunk": "D-Dimer is a protein fragment from blood clots. High levels suggest clotting problems. Reference range: < 0.5 \u03bcg/mL."}
+{"chunk": "Procalcitonin is a marker of bacterial infection and sepsis. Reference range: < 0.1 ng/mL."}
+{"chunk": "Troponin is released when the heart muscle is damaged. High levels suggest a heart attack. Reference range: < 0.04 ng/mL."}
+{"chunk": "BNP (Brain Natriuretic Peptide) is elevated in heart failure. Reference range: < 100 pg/mL."}
+{"chunk": "NT-proBNP helps diagnose and monitor heart failure. Reference range: < 100 pg/mL."}
+{"chunk": "ANA (Antinuclear Antibody) is used to detect autoimmune diseases like lupus."}
+{"chunk": "HIV tests detect the human immunodeficiency virus."}
+{"chunk": "Hepatitis B tests detect viral infection affecting the liver."}
+{"chunk": "Hepatitis C tests check for chronic liver infection."}

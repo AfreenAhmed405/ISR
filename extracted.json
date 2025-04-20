@@ -5,31 +5,38 @@
   "tokens": [
     {
       "name": "Cholesterol",
-      "value": "189.0 mg/dL"
+      "value": "189.0 mg/dL - Optimal",
+      "description": "Total Cholesterol measures all cholesterol in your blood. High levels increase heart disease risk."
     },
     {
       "name": "Triglyceride",
-      "value": "168.0 mg/dL"
+      "value": "168.0 mg/dL - High",
+      "description": "Triglycerides are a type of fat in the blood. Elevated levels are a risk factor for heart disease."
     },
     {
       "name": "HDL Cholesterol",
-      "value": "60.0 mg/dL"
+      "value": "60.0 mg/dL - High",
+      "description": "HDL (High-Density Lipoprotein) is the 'good' cholesterol. Higher levels are better for heart health."
     },
     {
       "name": "Direct LDL",
-      "value": "100.39 mg/dL"
+      "value": "100.39 mg/dL - Optimal",
+      "description": "LDL (Low-Density Lipoprotein) is the 'bad' cholesterol. High levels increase heart disease risk."
     },
     {
       "name": "VLDL",
-      "value": "33.60 mg/dL"
+      "value": "33.60 mg/dL - Optimal",
+      "description": "VLDL (Very Low-Density Lipoprotein) carries triglycerides. High levels can contribute to heart disease."
     },
     {
       "name": "CHOL/HDL Ratio",
-      "value": "3.1"
+      "value": "3.1 - Optimal",
+      "description": "LDL/HDL Ratio compares bad to good cholesterol. Higher values indicate more risk."
     },
     {
       "name": "LDL/HDL Ratio",
-      "value": "1.7"
+      "value": "1.7 - Optimal",
+      "description": "CHOL/HDL Ratio is used to estimate heart disease risk. A lower ratio is generally better."
     }
   ]
 }

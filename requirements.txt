@@ -6,4 +6,5 @@ rank_bm25
 tf-keras
 sentence_transformers
 biopython
-faiss-cpu==1.7.4
+faiss-cpu
+rank_bm25

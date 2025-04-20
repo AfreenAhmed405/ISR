@@ -23,7 +23,6 @@ def upload_file():
 
     # Process with tokenizer.py
     result = process_pdf(filepath, report_type, notes)
-    print(result)
 
     # Clean cache
     try:
