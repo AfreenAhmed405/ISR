@@ -33,6 +33,16 @@ body {
     font-weight: 600;
   }
 
+  .disclaimer-box {
+    background-color: #fff3cd;
+    color: #856404; 
+    border: 1px solid #ffeeba; 
+    padding: 1rem 2rem; 
+    text-align: center; 
+    font-size: 0.95rem; 
+    line-height: 1.4;
+  }
+
   .upload-box {
     background: white;
     padding: 40px;

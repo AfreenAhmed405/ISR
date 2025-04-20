@@ -1,35 +1,35 @@
 {
   "filename": "sample_report-3.pdf",
   "report_type": "blood",
-  "notes": "I am sleepy.",
+  "notes": "",
   "tokens": [
     {
       "name": "Cholesterol",
-      "value": "189.0 mg/dL - Optimal"
+      "value": "189.0 mg/dL"
     },
     {
       "name": "Triglyceride",
-      "value": "168.0 mg/dL - High"
+      "value": "168.0 mg/dL"
     },
     {
       "name": "HDL Cholesterol",
-      "value": "60.0 mg/dL - High"
+      "value": "60.0 mg/dL"
     },
     {
       "name": "Direct LDL",
-      "value": "100.39 mg/dL - Optimal"
+      "value": "100.39 mg/dL"
     },
     {
       "name": "VLDL",
-      "value": "33.60 mg/dL - Optimal"
+      "value": "33.60 mg/dL"
     },
     {
       "name": "CHOL/HDL Ratio",
-      "value": "3.1 - Optimal"
+      "value": "3.1"
     },
     {
       "name": "LDL/HDL Ratio",
-      "value": "1.7 - Optimal"
+      "value": "1.7"
     }
   ]
 }
