@@ -17,8 +17,8 @@
 {"chunk": "LDL (Low-Density Lipoprotein) is the 'bad' cholesterol. High levels increase heart disease risk. Reference range: < 100 mg/dL."}
 {"chunk": "VLDL (Very Low-Density Lipoprotein) carries triglycerides. High levels can contribute to heart disease. Reference range: < 100 mg/dL."}
 {"chunk": "Triglycerides are a type of fat in the blood. Elevated levels are a risk factor for heart disease. Reference range: < 150 mg/dL."}
-{"chunk": "CHOL/HDL Ratio is used to estimate heart disease risk. A lower ratio is generally better. Reference range: > 40 mg/dL."}
-{"chunk": "LDL/HDL Ratio compares bad to good cholesterol. Higher values indicate more risk. Reference range: > 40 mg/dL."}
+{"chunk": "CHOL/HDL Ratio is used to estimate heart disease risk. A lower ratio is generally better."}
+{"chunk": "LDL/HDL Ratio compares bad to good cholesterol. Higher values indicate more risk."}
 {"chunk": "Sodium helps regulate fluids and nerve function. Imbalances can cause confusion or seizures. Reference range: 135 - 145 mEq/L."}
 {"chunk": "Potassium is critical for heart and muscle function. Too high or low can be dangerous. Reference range: 3.5 - 5.0 mEq/L."}
 {"chunk": "Chloride helps maintain fluid balance and blood pressure. Reference range: 98 - 107 mEq/L."}
