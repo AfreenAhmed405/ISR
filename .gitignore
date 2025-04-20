@@ -3,3 +3,4 @@ me_env/
 *.pyc
 my_env/
 .env
+keys.env
