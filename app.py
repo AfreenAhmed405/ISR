@@ -55,7 +55,7 @@ def ask_question():
     with open("extracted.json", "r", encoding="utf-8") as f:
         summary = json.load(f)
 
-    # Hardcoded answer
+    # Hardcoded answer - A&R work on this
     answer = (
         "Your Total RBC Count is 3.5 million/cumm, which is slightly below the normal range of 3.9 - 4.8. "
         "This may indicate mild anemia or reduced oxygen-carrying capacity of the blood. "
