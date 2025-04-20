@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  .overlay {
+    background-color: rgba(255, 255, 255, 0.85);
+    min-height: 100vh;
+    padding-bottom: 2rem;
+  }
+  nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ccc;
+  }
+  .nav-left h1 {
+    margin: 0;
+    font-size: 1.6rem;
+    color: #004080;
+  }
+  .nav-left p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  .nav-right a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: 600;
+  }
+
+  .upload-box {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    max-width: 720px;
+    margin: 3rem auto;
+  }
+
+  label {
+    font-weight: 600;
+    display: block;
+    margin: 1.2rem 0 0.5rem;
+  }
+
+  select, input[type="file"], textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #fdfdfd;
+  }
+
+  button {
+    margin-top: 2rem;
+    background-color: #0077cc;
+    color: white;
+    padding: 0.9rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .info {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 0.3rem;
+  }
+
+  .file-info {
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 0.5rem;
+  }
+
+  .image-preview {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .thumb {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+
+  .guidance-box {
+    background: #f0f5fc;
+    padding: 1rem;
+    border-left: 4px solid #0077cc;
+    margin-top: 1rem;
+    border-radius: 8px;
+  }
+
+  footer {
+    background: #004080;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  footer p {
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .row > * {
+    flex: 1;
+  }

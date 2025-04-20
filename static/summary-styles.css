@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  .overlay {
+    background-color: rgba(255, 255, 255, 0.85);
+    min-height: 100vh;
+    padding-bottom: 2rem;
+  }
+  nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ccc;
+  }
+  .nav-left h1 {
+    margin: 0;
+    font-size: 1.6rem;
+    color: #004080;
+  }
+  .nav-left p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  .nav-right a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: 600;
+  }
+  .summary-box {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    max-width: 700px;
+    margin: 3rem auto;
+  }
+  h2 {
+    color: #004080;
+    margin-bottom: 1rem;
+  }
+  ul {
+    padding-left: 1.2rem;
+  }
+  ul li {
+    margin-bottom: 0.7rem;
+  }
+  .description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  label {
+    font-weight: 600;
+    display: block;
+    margin-top: 2rem;
+  }
+  .input-row {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  input[type="text"] {
+    flex: 1;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  button {
+    padding: 0.7rem 1.2rem;
+    background-color: #0077cc;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #005fa3;
+  }
+  #answer-box {
+    margin-top: 1.5rem;
+    background: #f0f5fc;
+    padding: 1rem;
+    border-radius: 8px;
+    display: none;
+  }
+
+  .upload-again {
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+
+  .upload-again a {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 0.8rem 1.5rem;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+
+  .upload-again a:hover {
+    background-color: #e0e0e0;
+  }
+
+  footer {
+    background: #004080;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+  }
+
+  footer p {
+    max-width: 600px;
+    margin: auto;
+  }

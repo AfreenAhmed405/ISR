@@ -1,40 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>My Flask Website</title>
-        <link rel="stylesheet" href="/static/style.css">
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Report Genie – Upload</title>
+  <link rel="stylesheet" href="static\index-styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+</head>
 
-    <body>
+<body>
+  <div class="overlay">
+    <nav>
+      <div class="nav-left">
+        <h1>Report Genie</h1>
+        <p>Your health report. Explained.</p>
+      </div>
+      <div class="nav-right">
+        <a href="#">Login</a>
+        <a href="#">Sign Up</a>
+      </div>
+    </nav>
 
+    <div class="upload-box">
+      <h2>Upload Your Medical Report</h2>
 
-        <div class="form-container">
-            <h1>Submit Your File</h1>
-            <form method="POST" action="/" enctype="multipart/form-data">
-                <div class="form-group">
-                    <label for="username">Your Name:</label>
-                    <input type="text" id="username" name="username" required>
-                </div>
-                <div>
-                    <label for="email">Your Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+      <form id="upload-form" action="/upload" method="POST" enctype="multipart/form-data">
+        <!-- Report Type -->
+        <label for="report-type">Select report type:</label>
+        <select id="report-type" name="report-type" onchange="showSuggestions()" required>
+          <option value="">-- Choose a type --</option>
+          <option value="blood">Blood Test</option>
+          <option value="radiology">Radiology</option>
+          <option value="discharge">Discharge Summary</option>
+          <option value="lab">Lab Report</option>
+          <option value="other">Other</option>
+        </select>
 
-                <div>
-                    <label for="message">Information (Optional):</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-    
-                <div class="form-group">
-                    <label for="file">Upload a File:</label>
-                    <input type="file" id="file" name="file" required>
-                </div>
-    
-                <button type="submit">Submit</button>
-            </form>
+        <div id="report-guidance"></div>
+
+        <!-- Upload PDF -->
+        <label for="pdf-upload">Upload medical report (PDF):</label>
+        <input type="file" id="pdf-upload" name="pdf-upload" accept=".pdf" required onchange="showFileName(event)">
+        <div class="file-info" id="pdf-info"></div>
+
+        <!-- Upload Images -->
+        <!-- <label for="image-upload">Upload screenshots or images (optional):</label>
+        <input type="file" id="image-upload" name="image-upload" accept="image/*" multiple onchange="previewImages(event)">
+        <div class="file-info" id="image-info"></div>
+        <div class="image-preview" id="image-preview"></div> -->
+
+        <!-- Notes -->
+        <label for="notes">Additional notes or symptoms:</label>
+        <textarea id="notes" name="notes" rows="3" placeholder="e.g., experiencing fatigue, already on medication..."></textarea>
+
+        <div class="row">
+          <button type="button" onclick="resetForm()">Reset Form</button>
+          <button type="submit">Upload & Summarize</button>
         </div>
+      </form>
+    </div>
 
+    <footer>
+      <p>We simplify complex medical reports using AI-powered information retrieval and summarization.  
+      Built for patients, by students passionate about healthcare accessibility.</p>
+    </footer>
+  </div>
 
-    </body>
+  <script src="{{ url_for('static', filename='script.js') }}"></script> 
+</body>
 </html>
