@@ -6,11 +6,12 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv 
 import google.generativeai as genai
+from Bio import Entrez
 
 def process_pdf(filepath, report_type, notes):
     text = extract_text_from_pdf(filepath)
     tokens = extract_with_gemini(text)
-    # generate_descriptions(tokens)
+    generate_descriptions(tokens)
 
     return {
         "filename": Path(filepath).name,
@@ -24,7 +25,6 @@ def extract_text_from_pdf(pdf_path):
     text = "\n".join([page.get_text("text") for page in doc])
     return text
 
-
 def extract_json_from_text(text):
     try:
         match = re.search(r"\[\s*{.*?}\s*]", text, re.DOTALL)
@@ -36,7 +36,6 @@ def extract_json_from_text(text):
         print("JSON parsing failed:", e)
         return []
     
-
 def extract_with_gemini(text):
     clean_text = "\n".join([line for line in text.splitlines() if line.strip()])
 
@@ -92,3 +91,51 @@ def generate_descriptions(tokens):
         context = retrieve_description(name)  # from BM25/FAISS                    
         summary = summarize_description_with_gemini(name, context)
         token["description"] = summary 
+
+
+def retrieve_description(test_name, top_k=5):
+    try:
+        # BM25
+        bm25_query = test_name.lower().split()
+        bm25_scores = bm25_index.get_scores(bm25_query)
+        bm25_top_idxs = np.argsort(bm25_scores)[-top_k:]
+
+        # FAISS
+        query_vec = embedding_model.encode([test_name])[0]
+        _, faiss_top_idxs = faiss_index_data.search(np.array([query_vec]), top_k)
+
+        # Combine unique indexes
+        combined_idxs = list(set(bm25_top_idxs.tolist() + faiss_top_idxs[0].tolist()))
+        context_chunks = [bm25_chunks[i] for i in combined_idxs if i < len(bm25_chunks)]
+
+        # If local RAG fails, fallback to PubMed
+        if not context_chunks or all(len(chunk.strip()) == 0 for chunk in context_chunks):
+            print(f"No local match for '{test_name}'. Using PubMed fallback.")
+            return retrieve_description_from_pubmed(test_name)
+
+        return context_chunks
+
+    except Exception as e:
+        print(f"Error in retrieve_description for '{test_name}': {e}")
+        return retrieve_description_from_pubmed(test_name)
+
+from Bio import Entrez
+Entrez.email = "mail.afreenahmed.com"  # REQUIRED
+
+def retrieve_description_from_pubmed(query, max_results=3):
+    try:
+        handle = Entrez.esearch(db="pubmed", term=f"{query} blood test", retmax=max_results)
+        record = Entrez.read(handle)
+        ids = record["IdList"]
+        if not ids:
+            return []
+
+        fetch_handle = Entrez.efetch(db="pubmed", id=",".join(ids), rettype="abstract", retmode="text")
+        raw_text = fetch_handle.read()
+
+        chunks = [chunk.strip() for chunk in raw_text.split("\n\n") if len(chunk.strip()) > 50]
+        return chunks[:max_results]
+
+    except Exception as e:
+        print(f"❌ PubMed fallback failed for '{query}': {e}")
+        return []
