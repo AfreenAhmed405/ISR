@@ -12,8 +12,8 @@ from sentence_transformers import SentenceTransformer
 
 def process_pdf(filepath, report_type, notes):
     text = extract_text_from_pdf(filepath)
-    tokens = extract_with_gemini(text)
-    # generate_descriptions(tokens)
+    tokens = extract_with_LLM(text)
+    generate_descriptions(tokens)
 
     return {
         "filename": Path(filepath).name,
@@ -38,7 +38,7 @@ def extract_json_from_text(text):
         print("JSON parsing failed:", e)
         return []
     
-def extract_with_gemini(text):
+def extract_with_LLM(text):
     clean_text = "\n".join([line for line in text.splitlines() if line.strip()])
 
     prompt = f"""
