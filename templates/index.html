@@ -34,7 +34,6 @@
         <select id="report-type" name="report-type" onchange="showSuggestions()" required>
           <option value="">-- Choose a type --</option>
           <option value="blood">Blood Test</option>
-          <option value="radiology">Radiology</option>
           <option value="discharge">Discharge Summary</option>
           <option value="lab">Lab Report</option>
           <option value="other">Other</option>
@@ -46,12 +45,6 @@
         <label for="pdf-upload">Upload medical report (PDF):</label>
         <input type="file" id="pdf-upload" name="pdf-upload" accept=".pdf" required onchange="showFileName(event)">
         <div class="file-info" id="pdf-info"></div>
-
-        <!-- Upload Images -->
-        <!-- <label for="image-upload">Upload screenshots or images (optional):</label>
-        <input type="file" id="image-upload" name="image-upload" accept="image/*" multiple onchange="previewImages(event)">
-        <div class="file-info" id="image-info"></div>
-        <div class="image-preview" id="image-preview"></div> -->
 
         <!-- Notes -->
         <label for="notes">Additional notes or symptoms:</label>

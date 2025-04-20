@@ -2,5 +2,26 @@
   "filename": "discharge_summary_one_page_smallfont.pdf",
   "report_type": "discharge",
   "notes": "",
-  "tokens": []
+  "tokens": [
+    {
+      "name": "Diagnosis",
+      "value": "Closed fracture of the left patella (knee cap)"
+    },
+    {
+      "name": "Treatment Provided",
+      "value": "Knee immobilized using a cylinder cast; Analgesics administered (Paracetamol + Ibuprofen); Tetanus toxoid administered; Crutches provided for assisted ambulation; No surgical intervention required"
+    },
+    {
+      "name": "Discharge Medications",
+      "value": "Paracetamol 500mg - 1 tablet every 6 hours as needed for pain; Ibuprofen 400mg - 1 tablet every 8 hours after food; Calcium + Vitamin D supplement - once daily"
+    },
+    {
+      "name": "Advice on Discharge",
+      "value": "Keep the leg elevated as much as possible; Do not remove or wet the cast; Avoid putting weight on the affected leg; Use crutches when ambulating; Ice therapy for 10 minutes, 3 times daily; Return immediately in case of numbness, bluish discoloration, or increasing pain"
+    },
+    {
+      "name": "Follow-Up",
+      "value": "Orthopedic review in 2 weeks; X-ray and range of motion evaluation scheduled; Physiotherapy to begin post-recast evaluation"
+    }
+  ]
 }

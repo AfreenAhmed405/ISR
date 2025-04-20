@@ -124,19 +124,29 @@ body {
     background-color: #e0e0e0;
   }
 
-  footer {
+footer {
+    margin-top: auto;
+
     background: #004080;
     color: white;
     text-align: center;
     padding: 2rem;
-    margin-top: 3rem;
+    margin-bottom: 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
+
 
   footer p {
     max-width: 600px;
-    margin: auto;
+    margin: 0 0 1rem 0; /* Space below the paragraph */
+    text-align: center;
+    line-height: 1.5;
   }
-
+  
   footer a {
     display: inline-flex;
     align-items: center;
@@ -163,14 +173,4 @@ body {
     height: 32px;
     margin-right: 0.5em;
     vertical-align: middle;
-  }
-
-  .row {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-  }
-
-  .row > * {
-    flex: 1;
   }

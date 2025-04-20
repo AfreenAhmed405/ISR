@@ -13,9 +13,11 @@ from rank_bm25 import BM25Okapi
 
 def process_pdf(filepath, report_type, notes):
     text = extract_text_from_pdf(filepath)
+
+    print(report_type)
     tokens = extract_with_LLM(text, report_type)
     
-    if report_type != 'Discharge Summary':
+    if report_type != 'discharge':
         tokens = generate_descriptions(tokens)
     
     print(tokens)
@@ -47,7 +49,7 @@ def extract_json_from_text(text):
 def extract_with_LLM(text, report_type):
     clean_text = "\n".join([line for line in text.splitlines() if line.strip()])
 
-    if report_type == 'Discharge Summary':
+    if report_type == 'discharge':
       prompt = f"""
       You are a medical report parser.
 
@@ -56,13 +58,25 @@ def extract_with_LLM(text, report_type):
       ---
 
       Your job:
-      1. Summarize what the page describes in plain English under a single key and extract all results in this **JSON format**:
-      {{
-        "name": "This page provides general information about laboratory test procedures and patient instructions."
-      }},
-      {{
-        "name": "Your foot is broken"
-      }}
+      1. Extract key **clinical sections** from the discharge summary in this **JSON list format**:
+      [
+        {{
+          "name": "Diagnosis",
+          "value": "Your foot is broken"
+        }},
+        {{
+          "name": "Advice on Discharge",
+          "value": "Ice your foot for 10 minutes daily"
+        }}
+      ]
+
+      2. **Do NOT include** any of the following:
+        - Patient name
+        - Dates (e.g., admission date, discharge date)
+        - Medical record numbers (MRN)
+        - Room numbers or contact details
+
+      Your output should only contain relevant medical insights or instructions useful for understanding the report.
 
       ---
 
