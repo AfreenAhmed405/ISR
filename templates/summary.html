@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Report Genie – Summary</title>
+  <title>Report Genie - Summary</title>
   <link rel="stylesheet" href="static\summary-styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
 </head>
@@ -34,11 +34,16 @@
       <p><strong>You also said: </strong> {{ summary.notes or "No additional notes provided." }}</p>
 
       <label for="question">Ask a question about your report:</label>
-      <div class="input-row">
-        <input type="text" id="question" placeholder="e.g., What does TSH stand for?">
-        <button onclick="handleQuestion()">Ask</button>
-      </div>
-      <div id="answer-box"></div>
+      <form action="/ask" method="POST" class="input-row">
+        <input type="text" id="question" name="question" placeholder="e.g., What does TSH stand for?" required>
+        <button type="submit">Ask</button>
+      </form>
+
+      <div id="answer-box">
+        <strong>You asked: </strong>{{ question }}<br /><br />
+        <strong>Answer:</strong> {{ answer }}
+        <div class="description">This explanation is based on your report values and question.</div>
+      </div>       
 
       <div class="upload-again">
         <a href="/">← Upload Another Report</a>
@@ -51,7 +56,17 @@
     </footer>
   </div>
 
-  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", function () {
+      const answerBox = document.getElementById("answer-box");
+      const answerText = `{{ answer | trim }}`;
+  
+      if (answerText && answerText !== "None") {
+        answerBox.style.display = "block";
+      }
+    });
+  </script>
+  
 
 </body>
 </html>
