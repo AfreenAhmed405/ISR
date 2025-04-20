@@ -23,6 +23,7 @@ def upload_file():
 
     # Process with tokenizer.py
     result = process_pdf(filepath, report_type, notes)
+    print(result)
 
     # Clean cache
     try:
@@ -39,7 +40,7 @@ def upload_file():
 @app.route('/summary')
 def summary():
     try:
-        with open("extracted_testing.json", "r", encoding="utf-8") as f:
+        with open("extracted.json", "r", encoding="utf-8") as f:
             result = json.load(f)
     except FileNotFoundError:
         result = {"tokens": [], "message": "No summary available."}
@@ -51,7 +52,7 @@ def summary():
 def ask_question():
     question = request.form.get("question")
 
-    with open("extracted_testing.json", "r", encoding="utf-8") as f:
+    with open("extracted.json", "r", encoding="utf-8") as f:
         summary = json.load(f)
 
     # Hardcoded answer
