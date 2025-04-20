@@ -61,9 +61,7 @@ def ask_question():
         "Common symptoms of low RBC count include fatigue, dizziness, or shortness of breath. "
     )
 
-    print(">>> ANSWER REPR:", repr(answer))
     return render_template("summary.html", summary=summary, answer=answer, question=question)
-
 
 if __name__ == '__main__':
     app.run(debug=True)
