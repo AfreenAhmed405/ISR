@@ -50,9 +50,7 @@ def summary():
 @app.route('/ask', methods=['POST'])
 def ask_question():
     question = request.form.get("question")
-    print("Received question:", question)  # Confirm it's working
 
-    # Load the report
     with open("extracted_testing.json", "r", encoding="utf-8") as f:
         summary = json.load(f)
 
