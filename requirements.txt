@@ -1,10 +1,8 @@
-Flask==2.3.3
-PyMuPDF==1.23.9
-python-dotenv==1.0.1
+flask
+PyMuPDF
+python_dotenv
 google-generativeai==0.3.2
-pandas==2.2.1
-numpy==1.26.4
-rank-bm25==0.2.2
+rank_bm25
+sentence_transformers
+biopython
 faiss-cpu==1.7.4
-sentence-transformers==2.3.1
-biopython==1.83

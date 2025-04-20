@@ -1,35 +1,70 @@
 {
   "filename": "sample_report-3.pdf",
   "report_type": "blood",
-  "notes": "I am feeling sick.",
+  "notes": "",
   "tokens": [
     {
       "name": "Cholesterol",
-      "value": "189.0 mg/dL"
+      "value": "189.0 mg/dL",
+      "description": [
+        "1. Sci Rep. 2025 Apr 19;15(1):13544. doi: 10.1038/s41598-025-98215-5.",
+        "Assessment of cardiovascular risk factors and effect of lifestyle in individuals \nwithout cardiovascular disease, diabetes or chronic kidney disease.",
+        "Babicki M(1), Ledwoch J(2), Zieli\u0144ski T(3), Janiak S(4), K\u0142oda K(5), \nKrzy\u017canowski F(6), Grabska P(7), Gajowiak D(8), Malchrzak W(6), Jazienicka-Kie\u0142b \nA(6), Jankowski P(9), Chudzik M(9)(10), Mastalerz-Migas A(6)."
+      ]
     },
     {
       "name": "Triglyceride",
-      "value": "168.0 mg/dL"
+      "value": "168.0 mg/dL",
+      "description": [
+        "1. BMC Nephrol. 2025 Apr 19;26(1):199. doi: 10.1186/s12882-025-04119-x.",
+        "Association between time-varying serum lipid levels and all-cause mortality in \nhaemodialysis and peritoneal dialysis patients.",
+        "Xu Z(1)(2), Zeng Y(1)(2), Liang Y(1)(2), Xie X(1)(2), Li X(1)(2), Yang Q(3)(4), \nLiang P(5)(6)."
+      ]
     },
     {
       "name": "HDL Cholesterol",
-      "value": "60.0 mg/dL"
+      "value": "60.0 mg/dL",
+      "description": [
+        "1. Sci Rep. 2025 Apr 19;15(1):13544. doi: 10.1038/s41598-025-98215-5.",
+        "Assessment of cardiovascular risk factors and effect of lifestyle in individuals \nwithout cardiovascular disease, diabetes or chronic kidney disease.",
+        "Babicki M(1), Ledwoch J(2), Zieli\u0144ski T(3), Janiak S(4), K\u0142oda K(5), \nKrzy\u017canowski F(6), Grabska P(7), Gajowiak D(8), Malchrzak W(6), Jazienicka-Kie\u0142b \nA(6), Jankowski P(9), Chudzik M(9)(10), Mastalerz-Migas A(6)."
+      ]
     },
     {
       "name": "Direct LDL",
-      "value": "100.39 mg/dL"
+      "value": "100.39 mg/dL",
+      "description": [
+        "1. Lipids Health Dis. 2025 Feb 10;24(1):43. doi: 10.1186/s12944-025-02458-0.",
+        "Impact of maternal lipid profiles on offspring birth size in late pregnancy \namong women with and without gestational diabetes.",
+        "Peng J(1), Zhang L(1), Jin J(1), Miao H(2), Liu G(3), Guo Y(4)."
+      ]
     },
     {
       "name": "VLDL",
-      "value": "33.60 mg/dL"
+      "value": "33.60 mg/dL",
+      "description": [
+        "1. Diabetes Res Clin Pract. 2025 Apr;222:112108. doi: \n10.1016/j.diabres.2025.112108. Epub 2025 Mar 21.",
+        "Comparison of the metabolic profiles and their cardiovascular event risks of \nmetformin users versus insulin users. A cohort study of people with type 2 \ndiabetes from the UK Biobank.",
+        "Chen LJ(1), Herder C(2), Xie R(1), Brenner H(1), Sch\u00f6ttker B(3)."
+      ]
     },
     {
       "name": "CHOL/HDL Ratio",
-      "value": "3.1"
+      "value": "3.1",
+      "description": [
+        "1. Pathol Oncol Res. 2020 Oct;26(4):2537-2548. doi: 10.1007/s12253-020-00850-y. \nEpub 2020 Jun 27.",
+        "KRAS Status is Associated with Metabolic Parameters in Metastatic Colorectal \nCancer According to Primary Tumour Location.",
+        "Tabuso M(1)(2), Christian M(3), Kimani PK(4), Gopalakrishnan K(5), Arasaradnam \nRP(6)(7)(8)(9)."
+      ]
     },
     {
       "name": "LDL/HDL Ratio",
-      "value": "1.7"
+      "value": "1.7",
+      "description": [
+        "1. Adv Biomed Res. 2025 Feb 28;14:11. doi: 10.4103/abr.abr_360_23. eCollection \n2025.",
+        "Investigation of Lipid Profile in Patients with Cerebrovascular Diseases: \nSystematic Review and Meta-Analysis.",
+        "Heydari F(1), Tajvidi M(2), Mohammadi SM(3), Kamyari N(4), Mohammadshahi F(1), \nMaleki H(5), Zeinivand N(2), Radmanesh E(2)(6), Pakzad R(1)."
+      ]
     }
   ]
 }

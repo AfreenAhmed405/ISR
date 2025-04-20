@@ -7,6 +7,8 @@ from pathlib import Path
 from dotenv import load_dotenv 
 import google.generativeai as genai
 from Bio import Entrez
+from rank_bm25 import BM25Okapi
+from sentence_transformers import SentenceTransformer
 
 def process_pdf(filepath, report_type, notes):
     text = extract_text_from_pdf(filepath)
@@ -89,35 +91,35 @@ def generate_descriptions(tokens):
     for token in tokens:
         name = token["name"]
         context = retrieve_description(name)  # from BM25/FAISS                    
-        summary = summarize_description_with_gemini(name, context)
-        token["description"] = summary 
+        # summary = summarize_description_with_gemini(name, context)
+        token["description"] = context 
 
 
-def retrieve_description(test_name, top_k=5):
-    try:
-        # BM25
-        bm25_query = test_name.lower().split()
-        bm25_scores = bm25_index.get_scores(bm25_query)
-        bm25_top_idxs = np.argsort(bm25_scores)[-top_k:]
+def retrieve_description(test_name, top_k=5, score_threshold=0.1):
+    global bm25_index, bm25_chunks, faiss_index_data, embedding_model
 
-        # FAISS
-        query_vec = embedding_model.encode([test_name])[0]
-        _, faiss_top_idxs = faiss_index_data.search(np.array([query_vec]), top_k)
+    test_query = test_name.lower().split()
 
-        # Combine unique indexes
-        combined_idxs = list(set(bm25_top_idxs.tolist() + faiss_top_idxs[0].tolist()))
-        context_chunks = [bm25_chunks[i] for i in combined_idxs if i < len(bm25_chunks)]
+    # --- BM25 ---
+    bm25_scores = bm25_index.get_scores(test_query)
+    top_bm25_idx = np.argsort(bm25_scores)[-top_k:]
+    top_bm25_chunks = [bm25_chunks[i] for i in top_bm25_idx if bm25_scores[i] > score_threshold]
 
-        # If local RAG fails, fallback to PubMed
-        if not context_chunks or all(len(chunk.strip()) == 0 for chunk in context_chunks):
-            print(f"No local match for '{test_name}'. Using PubMed fallback.")
-            return retrieve_description_from_pubmed(test_name)
+    # --- FAISS ---
+    query_vec = embedding_model.encode([test_name])[0]
+    _, faiss_top_idx = faiss_index_data.search(np.array([query_vec]), top_k)
+    faiss_chunks = [bm25_chunks[i] for i in faiss_top_idx[0]]
 
-        return context_chunks
-
-    except Exception as e:
-        print(f"Error in retrieve_description for '{test_name}': {e}")
+    # --- Combine & fallback ---
+    all_chunks = list(dict.fromkeys(top_bm25_chunks + faiss_chunks))
+    
+    if not all_chunks or all(len(chunk.strip()) < 30 for chunk in all_chunks):
+        print(f"⚠️ No strong BM25/FAISS match for '{test_name}' → using PubMed.")
         return retrieve_description_from_pubmed(test_name)
+
+    return all_chunks
+
+
 
 from Bio import Entrez
 Entrez.email = "mail.afreenahmed.com"  # REQUIRED
