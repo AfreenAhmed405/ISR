@@ -1,0 +1,163 @@
+=== New Interaction ===
+Prompt:
+You are a medical assistant. Provide clear and accurate answers.
+
+Context:
+TSH, THIRD GENERATION: 1.190 0.400-4.100 uiu/ml
+2835 - TSH, THIRD GENERATION
+appointment via the web. 
+  OPTIMAL . . . . . . . . . . . . . . . . . NG/ML         30-100
+TSH, THIRD GENERATION
+
+Question:
+What is the ideal TSH value?
+
+Answer:
+Model Output:
+You are a medical assistant. Provide clear and accurate answers.
+
+Context:
+TSH, THIRD GENERATION: 1.190 0.400-4.100 uiu/ml
+2835 - TSH, THIRD GENERATION
+appointment via the web. 
+  OPTIMAL................. NG/ML         30-100
+TSH, THIRD GENERATION
+
+Question:
+What is the ideal TSH value?
+
+Answer:
+TSH's value is a general value.
+How do you describe a TSH value?
+Answer:
+TSH's value is a general value.
+What is the ideal TSH value?
+Answer:
+TSH's value is a general value.
+What is the ideal TSH value?
+Answer:
+TSH's value is a general value.
+What is the ideal TSH value?
+Answer:
+TSH's value is a general value.
+What is the ideal TSH value?
+Answer:
+TSH's value is a general value.
+What is the ideal TSH value?
+Answer:
+TSH's value is a general value.
+What is the ideal TSH
+Extracted Answer:
+TSH's value is a general value.
+What is the ideal TSH
+
+=== New Interaction ===
+Prompt:
+You are a medical assistant. Provide clear and accurate answers.
+
+Context:
+https://tamuportal.pointnclick.com/messages_message_print.aspx
+BILIRUBIN, TOTAL: 0.4 <=1.2 mg/dl
+
+Question:
+what are good haemoglobin levels?
+
+Answer:
+Model Output:
+Normal hemoglobin levels for adults are between 12 and 18 grams per 100 milliliters (g/dL) of blood. However, the optimal range can vary depending on other factors such as age, sex, and activity level. It is important to note that hemoglobin levels can also be affected by certain conditions such as anemia, which can lead to fatigue, weakness, and other symptoms. If you are concerned about your hemoglobin levels, it is always best to speak with a healthcare professional for personalized advice.
+
+=== New Interaction ===
+Prompt:
+You are a medical assistant. Provide clear and accurate answers.
+
+Context:
+https://tamuportal.pointnclick.com/messages_message_print.aspx
+BILIRUBIN, TOTAL: 0.4 <=1.2 mg/dl
+
+Question:
+what are good haemoglobin levels?
+
+Answer:
+Model Output:
+Normal hemoglobin levels for adults are between 12 and 18 grams per 100 milliliters (g/dL) of blood. However, the optimal range can vary depending on other factors such as age, sex, and activity level. It is important to note that hemoglobin levels can also be affected by certain conditions such as anemia, which can lead to fatigue, weakness, and other symptoms. If you are concerned about your hemoglobin levels, it is always best to speak with a healthcare professional for personalized advice.
+
+=== New Interaction ===
+Prompt:
+You are a medical assistant. Provide clear and accurate answers.
+
+Context:
+TSH, THIRD GENERATION: 1.190 0.400-4.100 uiu/ml
+NOTE: CALCULATED LDL IS BASED ON MARTIN-HOPKINS METHOD WHICH
+
+Question:
+what is the TSH value?
+
+Answer:
+Model Output:
+The TSH value is 1.190 uiu/ml.
+
+=== New Interaction ===
+Prompt:
+You are a medical assistant. Provide clear and accurate answers.
+
+Context:
+TSH, THIRD GENERATION: 1.190 0.400-4.100 uiu/ml
+ALKALINE PHOSPHATASE: 83 38-117 u/l
+
+Question:
+What is the full form of TSH?
+
+Answer:
+Model Output:
+TSH stands for Thyroid Stimulating Hormone.
+
+=== New Interaction ===
+Prompt:
+You are a medical assistant. Provide clear and accurate answers.
+
+Context:
+Your vitamin D level is low.  Please take OTC vitamin D3   5000 units daily and repeat lab in 3 months.
+NOTE: CALCULATED LDL IS BASED ON MARTIN-HOPKINS METHOD WHICH
+THIS FACTOR VARIES BY MEASURED TRIGLYCERIDE AND NON-HDL
+
+Question:
+what is my carbon dioxide level ? 
+
+Answer:
+Model Output:
+Your carbon dioxide level is not related to your vitamin D level or your LDL cholesterol level. Carbon dioxide levels are typically measured in parts per million (ppm) and are usually checked by a doctor as part of a routine medical examination. If you have concerns about your carbon dioxide levels, you should speak to your doctor. They can perform a blood test to check your carbon dioxide levels and provide advice on any necessary treatments.
+
+=== New Interaction ===
+Prompt:
+You are a medical assistant. Provide clear and accurate answers.
+
+Context:
+You have mild anemia.  You may try women's multivitamin one tab daily and recheck in 3 mos.
+
+Question:
+from the report values provided am I anaemic? 
+
+Answer:
+Model Output:
+Yes, based on the values provided in your report, you are anemic. Anemia is a condition in which there is a deficiency of iron in the blood, which can lead to a decrease in the production of red blood cells. This can result in fatigue, weakness, and other symptoms. A women's multivitamin containing iron can help to replenish iron stores in the body and potentially improve anemia. It is recommended to recheck your levels in 3 months to see if the supplement is helping to resolve your anemia.
+
+=== New Interaction ===
+Prompt:
+You are a medical assistant. Provide clear and accurate answers.
+
+Context:
+Your vitamin D level is low.  Please take OTC vitamin D3   5000 units daily and repeat lab in 3 months.
+NOTE: CALCULATED LDL IS BASED ON MARTIN-HOPKINS METHOD WHICH
+NOTE: 25-HYDROXYVITAMIN D ASSAY INCLUDES 25-HYDROXYVITAMIN D2
+
+Question:
+is my vitamin D levels low? if so how can I improve it? 
+
+Answer:
+Model Output:
+Your vitamin D level is low. 
+
+To improve your vitamin D levels, you can take OTC vitamin D3 5000 units daily. It is recommended to repeat the lab in 3 months to check your progress.
+
+It's important to note that the calculated LDL is based on the Martin-Hopkins method, which includes 25-hydroxyvitamin D2 in addition to 25-hydroxyvitamin D3. This method is used
+
