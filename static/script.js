@@ -31,3 +31,39 @@ function showSuggestions() {
     document.getElementById("image-info").innerHTML = "";
     document.getElementById("image-preview").innerHTML = "";
   }
+document.addEventListener("DOMContentLoaded", function () {
+    const askForm = document.getElementById("ask-form");
+    const questionInput = document.getElementById("question");
+    const answerBox = document.getElementById("answer-box");
+    const questionText = document.getElementById("question-text");
+    const answerText = document.getElementById("answer-text");
+  
+    if (askForm) {
+      askForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const question = questionInput.value.trim();
+        if (!question) return;
+  
+        fetch("/ask", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+          },
+          body: `question=${encodeURIComponent(question)}`
+        })
+        .then(res => res.json())
+        .then(data => {
+          questionText.innerText = question;
+          answerText.innerText = data.answer;
+          answerBox.style.display = "block";
+          questionInput.value = "";
+        })
+        .catch(err => {
+          console.error("Error fetching answer:", err);
+          answerText.innerText = "Sorry, something went wrong. Please try again.";
+          answerBox.style.display = "block";
+        });
+      });
+    }
+  });
+
