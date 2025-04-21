@@ -37,17 +37,35 @@
 
       <p><strong>You also said: </strong> {{ summary.notes or "No additional notes provided." }}</p>
 
-      <label for="question">Ask a question about your report:</label>
-      <form action="/ask" method="POST" class="input-row">
-        <input type="text" id="question" name="question" placeholder="e.g., What does TSH stand for?" required>
+      <form id="ask-form">
+        <label for="question">Ask a question about your report:</label>
+        <input type="text" id="question" name="question" placeholder="Enter your question..." required />
         <button type="submit">Ask</button>
       </form>
-
-      <div id="answer-box">
-        <strong>You asked: </strong>{{ question }}<br /><br />
-        <strong>Answer:</strong> {{ answer }}
-        <div class="description">This explanation is based on your report values and question.</div>
-      </div>       
+      
+      <div id="answer-box" style="margin-top: 20px; display: none;">
+        <strong>Answer:</strong>
+        <p id="answer-text"></p>
+      </div>
+      
+      <script>
+        document.getElementById("ask-form").addEventListener("submit", async function (e) {
+          e.preventDefault();
+          const question = document.getElementById("question").value;
+          
+          const response = await fetch("/ask", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded",
+            },
+            body: `question=${encodeURIComponent(question)}`
+          });
+      
+          const data = await response.json();
+          document.getElementById("answer-box").style.display = "block";
+          document.getElementById("answer-text").textContent = data.answer;
+        });
+      </script>      
 
       <div class="upload-again">
         <a href="/">← Upload Another Report</a>
