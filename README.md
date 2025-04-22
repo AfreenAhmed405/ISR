@@ -46,6 +46,7 @@ Report Genie is a Flask-based web application that allows users to upload medica
 Create a file called .env in the project root:
    ```bash
    GOOGLE_API_KEY=your_gemini_api_key_here
+   MODEL_PATH=your_model_path_here
    ```
 
 ### 4. Run the app
