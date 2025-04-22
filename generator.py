@@ -2,8 +2,10 @@
 from llama_cpp import Llama
 import os
 from transformers import AutoTokenizer
+from dotenv import load_dotenv
 
-model_path = "/Users/sudheerb/Downloads/mistral-7b-instruct-v0.1.Q4_0.gguf"
+load_dotenv(dotenv_path=".env")
+model_path = os.getenv("MODEL_PATH")
 llm = Llama(model_path=model_path, n_ctx=256)
 
 # Use a public tokenizer for estimating token lengths
@@ -17,7 +19,7 @@ def generate_answer(question, context, log_file="model_logs.txt"):
     allowed_ctx_tokens = max_ctx_tokens - len(question_tokens) - 50
 
     if len(context_tokens) > allowed_ctx_tokens:
-        print(f"⚠️ Truncating context from {len(context_tokens)} to {allowed_ctx_tokens} tokens.")
+        print(f"Truncating context from {len(context_tokens)} to {allowed_ctx_tokens} tokens.")
         context = tokenizer.decode(context_tokens[:allowed_ctx_tokens])
 
     prompt = f"""You are a medical assistant. Provide clear and accurate answers.
@@ -30,16 +32,16 @@ Question:
 
 Answer:"""
 
-    print("🟡 Prompt size (chars):", len(prompt))
-    print("🟡 Generating response...")
+    print("Prompt size (chars):", len(prompt))
+    print("Generating response...")
 
     try:
         output = llm(prompt, max_tokens=150, temperature=0.7)
         response = output["choices"][0]["text"].strip()
-        print("🟢 Model response received.")
+        print("Model response received.")
     except Exception as e:
-        print("🔴 Model failed:", e)
-        response = "⚠️ Unable to generate response due to internal model error."
+        print("Model failed:", e)
+        response = "Unable to generate response due to internal model error."
 
     with open(log_file, "a", encoding="utf-8") as f:
         f.write("=== New Interaction ===\n")
