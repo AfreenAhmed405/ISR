@@ -11,3 +11,4 @@ huggingface_hub==0.18.0
 tokenizers>=0.14
 transformers==4.35.2
 torch==2.1.0 --index-url https://download.pytorch.org/whl/cpu
+llama-cpp-python
