@@ -41,25 +41,28 @@ Report Genie is a Flask-based web application that allows users to upload medica
    ```bash
    pip install -r requirements.txt
    ```
-### 3. Getting the model
-The current model we are using can be downloaded from huggingface: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2. 
-Once the model is downloaded, you can login to huggingface from the terminal.
+### 3. Login to Huggingface
 ```bash
    huggingface-cli login
 ```
-### 4. Add your Gemini API key
+
+### 4. Download the LLM model locally
+The current model that we are using can be downloaded from huggingface: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2. 
+Once the model is downloaded, update the path accordingly.
+
+### 5. Add your Gemini API key
 Create a file called .env in the project root:
    ```bash
    GOOGLE_API_KEY=your_gemini_api_key_here
    MODEL_PATH=your_model_path_here
    ```
 
-### 4. Run the app
+### 6. Run the app
    ```bash
    python app.py
    ```
 
-### 5. Open in browser
+### 7. Open in browser
    ```bash
    http://localhost:5000
    ```
