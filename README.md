@@ -48,7 +48,7 @@ Report Genie is a Flask-based web application that allows users to upload medica
 ```
 
 ### 4. Download the LLM model locally
-The current model that we are using can be downloaded from huggingface: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2. 
+The current model that we are using can be downloaded from huggingface: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2. <br>
 Once the model is downloaded, update the path accordingly.
 
 ### 5. Add your Gemini API key
