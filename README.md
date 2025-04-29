@@ -4,6 +4,7 @@ Report Genie is a Flask-based web application that allows users to upload medica
 
 ![Landing Page](static/s1.png)
 ![Report Summarizer](static/s2.png)
+![Discharge Summary Report](static/s3.jpeg)
 
 ---
 
